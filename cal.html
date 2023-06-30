@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="cal.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="formstyle">
+        <form name="form1">
+          <input id="textInput" class="textview input-box" name="textview" />
+        </form>
+        <center>
+          <table class="mt-4 center">
+            <tr>
+              <td>
+                <input
+                  class="btn1"
+                  type="button"
+                  value="C"
+                  onclick="clearCalculator()"
+                />
+              </td>
+
+              <td>
+                <input
+                  class="btn1"
+                  type="button"
+                  value="/"
+                  onclick="insertOperator('/')"
+                />
+              </td>
+              <td>
+                <input
+                  class="btn1"
+                  type="button"
+                  value="x"
+                  onclick="insertOperator('*')"
+                />
+              </td>
+              <td>
+                <input
+                  class="btn1"
+                  type="button"
+                  value="-"
+                  onclick="insertOperator('-')"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input
+                  class="btn1"
+                  type="button"
+                  value="1"
+                  onclick="insertNumber(1)"
+                />
+              </td>
+              <td>
+                <input
+                  class="btn1"
+                  type="button"
+                  value="2"
+                  onclick="insertNumber(2)"
+                />
+              </td>
+              <td>
+                <input
+                  class="btn1"
+                  type="button"
+                  value="3"
+                  onclick="insertNumber(3)"
+                />
+              </td>
+              <td>
+                <input
+                  class="btn1"
+                  type="button"
+                  value="+"
+                  onclick="insertOperator('+')"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input
+                  class="btn1"
+                  type="button"
+                  value="4"
+                  onclick="insertNumber(4)"
+                />
+              </td>
+              <td>
+                <input
+                  class="btn1"
+                  type="button"
+                  value="5"
+                  onclick="insertNumber(5)"
+                />
+              </td>
+              <td>
+                <input
+                  class="btn1"
+                  type="button"
+                  value="6"
+                  onclick="insertNumber(6)"
+                />
+              </td>
+              <td>
+                <input
+                  class="btn1"
+                  type="button"
+                  value="."
+                  onclick="insertNumber('.')"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input
+                  class="btn1"
+                  type="button"
+                  value="7"
+                  onclick="insertNumber(7)"
+                />
+              </td>
+              <td>
+                <input
+                  class="btn1"
+                  type="button"
+                  value="8"
+                  onclick="insertNumber(8)"
+                />
+              </td>
+              <td>
+                <input
+                  class="btn1"
+                  type="button"
+                  value="9"
+                  onclick="insertNumber(9)"
+                />
+              </td>
+              <td colspan="2">
+                <input
+                  class="btn1"
+                  type="button"
+                  value="0"
+                  onclick="insertNumber(0)"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="5">
+                <input
+                  style="border-radius: 0; width: 120px"
+                  class="btn1 text-aligh"
+                  type="button"
+                  value="="
+                  onclick="equal()"
+                />
+              </td>
+            </tr>
+          </table>
+        </center>
+      </div>
+    </div>
+    <script src="cal.js"></script>
+  </body>
+</html>
